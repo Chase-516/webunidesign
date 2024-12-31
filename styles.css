@@ -1,0 +1,682 @@
+#wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}.welcome {
+    border-radius: 5px;
+}
+
+.home-aboutus h2 {
+    padding-right: 20px;
+}
+
+.home-aboutus p {
+    font-size: 17px;
+}
+
+.video {
+    float: inline-end;
+    margin: 5px;
+}
+
+.home-contact {
+    text-align: center;
+}
+.banner {
+    height: 250px;
+    display: flex;
+    background-image: url('image/banner.jpeg');
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.banner ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+}
+
+.banner-content {
+    z-index: 2;
+    color: black;
+}
+.banner h1, .banner p{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+  
+  
+      .timeline { 
+        --timeline-color: #8697c4;
+        text-align: center;
+        position: relative;
+        list-style: none;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* set here the height of the timeline */
+        min-height: 320px;  }  
+        .timeline li{ 
+            background-color: #8697c4;
+            border-radius: 8px;
+        }  
+      
+      /* middle line */
+      .timeline:before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 1px);
+        width: 100%;
+        height: 2px;
+        background: var(--timeline-color); }
+      
+      .timeline li { 
+        margin: 0 20px;
+        min-width: 200px;
+        align-self: flex-start; }
+  
+      /*  event in even position are bottom-aligned */
+      .timeline li:nth-child(2n) { align-self: flex-end;  }
+      
+      .timeline div {
+        position: relative;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px var(--timeline-color) solid; }
+      
+      /* style for the dot over the timeline */
+      .timeline li:before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         margin-left: 0px;
+         transform: translate(-50%, -50%);
+         border: 1px black solid;
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background:  #3d52a0;
+        
+      }
+  
+      /* style for the event arrow */
+      .timeline div:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        width: 20px;
+        height: 20px;
+        transform: translate(-50%, -1px) rotateZ(45deg);
+        background: #8697c4;
+      }
+      
+      /* position of the event arrow in odd position */
+      .timeline li:nth-child(2n - 1) div:before {
+        top: 100%;
+        margin-top: -8px;
+        border-right: 1px var(--timeline-color) solid;
+        border-bottom: 1px var(--timeline-color) solid; }
+      
+      /* position of the event arrow in even position */
+      .timeline li:nth-child(2n) div:before {
+        top: 0;
+        margin-top: -10px;
+        border-left: 1px var(--timeline-color) solid;
+        border-top: 1px var(--timeline-color) solid; }
+
+.inspiration {
+    justify-content: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #7091e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+}
+.inspiration h2 {
+    margin-left: 10px;
+    margin-top: 0px ;
+}
+.inspiration p {
+    margin: 0px 40px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.vision-mission-goals {
+    display: flex;
+    margin: 20px auto;
+    text-align: justify;
+    gap: 10px;
+    justify-content: center;
+}
+
+.mission {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    border-radius: 5px;
+    
+}
+
+.vision {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    
+    border-radius: 5px;
+    float: left;
+}
+
+.goals {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    border-radius: 5px;
+    float: right;
+}
+
+.achievements {
+    display: flex;
+    margin: 20px auto;
+    text-align: justify;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.achievement-header {
+    text-align: center;
+    padding-right: 8px;
+}
+
+.achievements img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.retention-rate {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    
+    border-radius: 5px;
+    
+}
+
+.served-clients {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    text-align: left;
+    border-radius: 5px;
+    float: left;
+}
+
+.awards {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    border-radius: 5px;
+    float: right;
+}
+
+
+.skill {
+    display: flex;
+    margin: 20px auto;
+    text-align: justify;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.past-clients-header h2 {
+    text-align: center;
+}
+
+.software {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    
+    border-radius: 5px;
+    
+}
+
+.coding {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    text-align: left;
+    border-radius: 5px;
+    float: left;
+}
+
+.language {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #7091e6;
+    max-width: 300px;
+    border-radius: 5px;
+    float: right;
+}
+
+.gallery {
+    display: flex;
+    margin: 20px auto;
+    text-align: justify;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-contact {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* transfer code */
+
+/* tag */
+html{
+    scroll-behavior: smooth;    
+}
+body{
+    background-color: #ede8f5;
+    color: #000000;
+    margin: 0px;
+    font-family: "DM Sans", sans-serif;
+}
+header{
+    vertical-align: middle;
+}
+nav{
+    position: fixed;
+    border-radius: 15px;
+    z-index: 1;
+    background-color: #adbbda;
+    width: 99.2%;
+    margin-left: 6.1px;
+    top: 0;
+    z-index: 100;
+}
+a{
+    text-decoration: none;
+    transition: 0.25s;
+}
+nav ul{
+    list-style: none;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+nav ul li{
+    display: inline;
+    margin: 0px 15px;
+}
+nav a:visited , nav a:link{
+    color: #213E60;
+}
+nav a:hover{
+    color: #E68C3A;
+}
+a:visited , a:link{
+    color: #3e72ae;
+}
+a:hover{
+    color: #E68C3A ;
+}
+form{
+    text-align: center; 
+}
+footer{
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 50%;
+    background-color:#3d52a0 ;
+    color: #F4F2EF;
+    padding-bottom: 5px;
+}
+footer p a{
+    margin: 0px 10px;
+}
+footer i{
+    background-color:#3d52a0 ;
+}
+footer a:visited ,footer a:link {
+    color: #F4F2EF;
+}
+footer a:hover {
+    color: #E68C3A;
+}
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+input[type=submit]{
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+textarea {
+    width: 70%;
+    height: 180px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    border: 1px solid black;
+}
+dl{
+    padding: 0px 30px;
+}
+table,tr,td,th{
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+}
+tr,td,th{
+    padding: 10px;
+}
+hr{
+    margin: 0px 10px;
+}
+th{
+    font-size: 1.4em;
+}
+
+
+/* id */
+
+#logo{
+    height: 65px;
+    width: 130px;
+    float: left;
+    margin-left: 10px;
+}
+#PrivacyPolicy{
+    margin: 0px 100px 0px 20px;
+}
+#ContactDis{
+    text-align: center;
+    font-size: 20px;
+}
+#option{
+    padding: 5px 15px;
+    border-radius: 8px ;
+    margin-top: 10px;
+}
+#ServiceButton{
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#ServiceButton:hover{
+    background-color: #e6e4e2;
+    transition: 0.5s;
+}
+#ScrollTop{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+#FooterLogo{
+    height: 90px;
+    width: auto;
+    display: inline;
+    float: inline-start;
+    margin-left: 40px;
+}
+
+
+
+
+/* class */
+
+.footer_link{
+    display: contents;
+}
+.footer_img{
+    margin: 0px 15px;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    padding: 0px;
+}
+.row {
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    margin: 0px 30px;
+}
+.col_1 {
+    float: left;
+    width: 30% ;
+}
+.col_2 {
+    float: left;
+    width: 30% ;
+}
+.bar{
+    font-size: 20px;
+}
+/* container */
+.two-columns-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 200px;
+}
+/* columns */
+.two-columns-grid {
+    padding:1rem;
+}
+.centre{
+    text-align: center;
+}
+.TestiLeftAlign{
+    margin: 3% 40% 3% 20%;
+    border: 1px solid black;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 40%;
+    word-wrap: break-word;
+    background-color: #96b6ef;
+}
+.TestiRightAlign{
+    margin: 3% 30% 3% 40%;
+    border: 1px solid black;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 40%;
+    word-wrap: break-word;
+    color: white;
+    background-color: #1860c3;
+}
+.ServiceText{
+    border: 1px solid black ;
+    margin: 20px 150px;
+    border-radius: 10px;
+    min-height: 200px;
+    word-wrap: break-word;
+}
+.ServiceImg{
+    float: inline-start; 
+    border: 1px dashed black ;
+    background-color: rebeccapurple;
+    padding: 2px;
+    margin-top: 25px; 
+    margin-left: 25px;
+    max-width: 170px;
+    min-height: 140px;
+    border-radius: 10px;
+}
+.ServiceUl{
+    margin-left: 180px;
+}
+.FooterSert{
+    float: right;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.PastProject{
+    width: 150px;
+    height: 150px;
+    margin: 0px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 3px;
+}
+.SoftwareLogo{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+/* slide show */
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative; 
+    width:70%; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 30px 15px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev{
+    border-radius: 0px 40px 40px 0px;
+}
+.next {
+    right: 0;
+    border-radius: 40px 0px 0px 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgb(203, 203, 203);
+    opacity: 50%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 100px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
